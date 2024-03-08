@@ -1,6 +1,6 @@
 {
   "name": "@malcherf/github-actions-reporter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "GitHub Actions reporter for Playwright",
   "main": "dist/index.js",
   "scripts": {
