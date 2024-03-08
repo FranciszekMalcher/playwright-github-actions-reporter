@@ -12,17 +12,13 @@
   },
   "author": "Elio Struyf <elio@struyfconsulting.be>",
   "license": "MIT",
-  "homepage": "https://github.com/estruyf/playwright-github-actions-reporter",
+  "homepage": "https://github.com/FranciszekMalcher/playwright-github-actions-reporter",
   "bugs": {
-    "url": "https://github.com/estruyf/playwright-github-actions-reporter/issues"
-  },
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/estruyf"
+    "url": "https://github.com/FranciszekMalcher/playwright-github-actions-reporter/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/estruyf/playwright-github-actions-reporter.git"
+    "url": "https://github.com/FranciszekMalcher/playwright-github-actions-reporter.git"
   },
   "keywords": [
     "playwright",
