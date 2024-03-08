@@ -7,7 +7,7 @@ import type {
   TestResult,
 } from "@playwright/test/reporter";
 import * as core from "@actions/core";
-import { basename, join } from "path";
+import { basename, dirname, join } from "path";
 import { getHtmlTable } from "./utils/getHtmlTable";
 import { getTableRows } from "./utils/getTableRows";
 import { getTestStatusIcon } from "./utils/getTestStatusIcon";
@@ -108,6 +108,7 @@ class GitHubAction implements Reporter {
 
         for (const filePath of Object.keys(tests)) {
           const fileName = basename(filePath);
+          const folderName = basename(dirname(filePath)); //
 
           if (this.options.useDetails) {
             const content = getHtmlTable(
@@ -119,7 +120,7 @@ class GitHubAction implements Reporter {
             const testStatusIcon = getTestStatusIcon(tests[filePath]);
 
             summary.addDetails(
-              `${testStatusIcon} ${fileName} (${os}${
+              `${testStatusIcon} ${folderName}/${fileName} (${os}${
                 project!.name ? ` / ${project!.name}` : ""
               })`,
               content
